@@ -71,7 +71,7 @@ console.log(ageJonas > ageSarah);
 console.log(ageSarah>= 18); */
 
 // operator precedence
-const now = 2037;
+/* const now = 2037;
 const ageJonas = now - 1991;
 const ageSarah = now - 1998;
 
@@ -82,7 +82,66 @@ x = y= 25-10-5;
 console.log(x,y);
 
 const averageAge = (ageJonas + ageSarah) /2
-console.log(averageAge);
+console.log(averageAge); */
 // the precedence is found in MDN mozilla developer 
 
+/* // Coding challenge #1
+// TEST DATA 1 
+const markMass = 78;
+const markHeight = 1.69;
+const johnMass = 92;
+const johnHeight = 1.95;
+// First BMI for Mark
+const markBmi = markMass / (markHeight ** 2);
+console.log(markBmi);
+// First BMI for John
+const johnBmi = johnMass/(johnHeight**2);
+console.log(johnBmi);
+// boolean
+const markHigherBMI = (markBmi > johnBmi);
+console.log(markHigherBMI);
 
+// Test Data 2
+// TEST DATA 1 
+const markMass2 = 95;
+const markHeight2 = 1.88;
+const johnMass2 =85;
+const johnHeight2 = 1.76;
+// First BMI for Mark
+const markBmi2 = markMass2 / (markHeight2 ** 2);
+console.log(markBmi2);
+// First BMI for John
+const johnBmi2 = johnMass2/(johnHeight2**2);
+console.log(johnBmi2);
+// boolean
+const markHigherBMI2 = (markBmi2 > johnBmi2);
+console.log(markHigherBMI2);
+
+ */
+
+/* 
+// learning strings
+const firstName = "Dare";
+const job = "Developer";
+const birthYear = 1986;
+const yearNow = 2023;
+const Dare = `I'm ${firstName}, a ${yearNow - birthYear} year old ${job}!`;
+console.log(Dare);
+
+// creating multilines
+console.log('string with \n\ mulitple \n\ lines');
+console.log(`string with
+multiple
+lines`) */
+
+// conditional statement
+const age =15;
+const isOldEnough = age>=18;
+
+if(isOldEnough){
+    console.log(`Sarah can start driving licence 🚗`);
+    }
+    else{
+        const yearLeft =18-age;
+        console.log(`Sarah is too young. Wait another ${yearLeft} years 😒`);
+    }
