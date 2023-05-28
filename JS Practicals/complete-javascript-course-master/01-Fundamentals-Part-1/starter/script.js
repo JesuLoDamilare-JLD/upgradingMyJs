@@ -135,7 +135,7 @@ multiple
 lines`) */
 
 // conditional statement
-const age =15;
+/* const age =15;
 const isOldEnough = age>=18;
 
 if(isOldEnough){
@@ -145,3 +145,105 @@ if(isOldEnough){
         const yearLeft =18-age;
         console.log(`Sarah is too young. Wait another ${yearLeft} years 😒`);
     }
+
+const birthYear = 1991;
+let century;
+if(birthYear <= 2000){
+    century =20;
+}
+else{
+    century = 21;
+}
+console.log(century); */
+
+// CHallenge 2
+// Test Data 1
+// TEST DATA 1 
+/* const markMass = 78;
+const markHeight = 1.69;
+const johnMass = 92;
+const johnHeight = 1.95;
+// First BMI for Mark
+const markBmi = markMass / (markHeight ** 2);
+console.log(markBmi);
+// First BMI for John
+const johnBmi = johnMass/(johnHeight**2);
+console.log(johnBmi);
+// boolean
+const markHigherBMI = (markBmi > johnBmi);
+console.log(markHigherBMI);
+// if-else statement
+if(markBmi > johnBmi){
+    console.log(`Mark's BMI (${markBmi}) is higher than John's (${johnBmi})!`)
+}
+else{
+    `John's BMI (${johnBmi}) is higher than Mark's (${markBmi})!`
+};
+
+// Test Data 2
+const markMass2 = 95;
+const markHeight2 = 1.88;
+const johnMass2 =85;
+const johnHeight2 = 1.76;
+// First BMI for Mark
+const markBmi2 = markMass2 / (markHeight2 ** 2);
+console.log(markBmi2);
+// First BMI for John
+const johnBmi2 = johnMass2/(johnHeight2**2);
+console.log(johnBmi2);
+// boolean
+const markHigherBMI2 = (markBmi2 > johnBmi2);
+console.log(markHigherBMI2);
+// if-else statement
+if(markBmi2 > johnBmi2){
+    console.log(`Mark's BMI (${markBmi2}) is higher than John's (${johnBmi2})!`)
+}
+else{
+    console.log(`John's BMI (${johnBmi2}) is higher than Mark's (${markBmi2})!`)
+};
+ */
+
+// Type conversion and coersion
+// converting strings to number
+/* const inputYear = "1991";
+console.log(Number(inputYear));
+console.log(Number(inputYear) + 18);
+// NaN not a number is when JS cannot convert string to a number
+console.log(Number('Dare'));
+// Converting number to string
+console.log(String(23), 23);
+// Converting to boolean
+// JS converst to 3, number, string and boolean
+
+// Type coercion
+// Two values that have 2 differnt types. JS converts one to match the other
+console.log("I am" + 23 + " year old");
+console.log("23" - "10" - 3); //10
+console.log("23"/"2");
+
+let n="1" + 1; //"11"
+n=n-1;
+console.log(n) //10 */
+
+// Truthy and Falsy Value
+// 5 falsy values: 0, '', undefined, null, NaN
+console.log(Boolean(0)); //false
+console.log(Boolean(undefined)); //false
+console.log(Boolean("Jonas")); //True
+console.log(Boolean({})); //True
+console.log(Boolean('')); //False
+
+const money = 0;
+if(money){
+    console.log(`Dont spend it all :)`);
+}
+else{
+    console.log(`You should get a job!`);
+}
+let height;
+if(height){
+    console.log(`'YAY'! Height is defined`);
+}
+else{
+    console.log(`Height is UNDEFINED`);
+}
