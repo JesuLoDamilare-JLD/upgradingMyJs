@@ -227,7 +227,7 @@ console.log(n) //10 */
 
 // Truthy and Falsy Value
 // 5 falsy values: 0, '', undefined, null, NaN
-console.log(Boolean(0)); //false
+/* console.log(Boolean(0)); //false
 console.log(Boolean(undefined)); //false
 console.log(Boolean("Jonas")); //True
 console.log(Boolean({})); //True
@@ -246,4 +246,87 @@ if(height){
 }
 else{
     console.log(`Height is UNDEFINED`);
+} */
+
+// Equality Operators == VS ===
+/* const age = '18';
+if(age===18) console.log(`You just became an adult :D (strict)`);
+// tripple equal does not perform type coerssion
+if(age==18) console.log(`You just became an adult :D (loose)`);
+
+const favorite = Number(prompt(`What's your favorite number?23`));
+console.log(favorite);
+console.log(typeof favorite);
+
+if(favorite === 23){
+    console.log(`Cool! 23 is an amazing number!`)
+}
+else if(favorite===7){
+    console.log(`7 is also a cool number`)
+}
+else if(favorite===9){
+    console.log(`9 is also a cool number`)
+}
+else{
+    console.log(`Number is not 23 or 7 or 9`)
+}
+if(favorite !==23) console.log(`Why not 23?`) */
+
+// Boolean Logic
+// A AND B = ONLY TRUE AND TRUE IS TRUE
+// A OR B = ONLY FALSE OR FALSE IS FALSE
+// NOT A, NOT B = OPPOSITE OF TRUE IF TRUE AND FALSE IF FALSE
+
+/* const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+ */
+/* if(shouldDrive){
+    console.log(`Sarah is able to dive!`);
+}
+else{
+    console.log(`Someone else should drive..`);
+} */
+
+/* const isTired = true;
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if(hasDriversLicense && hasGoodVision && !isTired){
+    console.log(`Sarah is able to dive!`);
+}
+else{
+    console.log(`Someone else should drive..`);
+} */
+
+// Challenge solution test data 
+/* const avgScoreDolphins = (96+108+89)/3;
+const avgScoresKoalas = (88+91+110)/3;
+if(avgScoreDolphins >avgScoresKoalas){
+console.log(`Dolphins' team is the Winner!!`);
+}
+else if(avgScoreDolphins = avgScoresKoalas){
+    console.log(`It is a draw!!!`);
+}
+else{
+    console.log(`Koalas' team won the game ..`);
+}
+ */
+// Test data Bonus 1
+const avgScoreDolphins = (97+112+101)/3;
+const avgScoresKoalas = (109+95+123)/3;
+const winnerIsDolphins =(avgScoreDolphins>avgScoresKoalas)&&(avgScoreDolphins >100);
+const winnerIsKoalas =(avgScoreDolphins<avgScoresKoalas)&&(avgScoresKoalas >100);
+if(winnerIsDolphins){
+console.log(`Dolphins' team is the Super Winner!!`);
+}
+else if(winnerIsDolphins == winnerIsKoalas)&&(avgScoreDolphins>=100 && avgScoresKoalas>=100){
+    console.log(`It is a draw!!!`);
+}
+else{
+    console.log(`No team wins the trophy`);
 }
