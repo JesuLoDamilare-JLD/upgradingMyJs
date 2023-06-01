@@ -317,16 +317,74 @@ else{
 }
  */
 // Test data Bonus 1
-const avgScoreDolphins = (97+112+101)/3;
-const avgScoresKoalas = (109+95+123)/3;
+/* const avgScoreDolphins = (97+112+101)/3;
+const avgScoresKoalas = (109+95+106)/3;
 const winnerIsDolphins =(avgScoreDolphins>avgScoresKoalas)&&(avgScoreDolphins >100);
 const winnerIsKoalas =(avgScoreDolphins<avgScoresKoalas)&&(avgScoresKoalas >100);
+const avgGreaterDolphins=(avgScoreDolphins >100);
+const avgGreaterKoalas=(avgScoresKoalas >100);
+const drawCheck = (avgScoreDolphins==avgScoresKoalas)&&(avgGreaterDolphins==avgGreaterKoalas);
 if(winnerIsDolphins){
 console.log(`Dolphins' team is the Super Winner!!`);
 }
-else if(winnerIsDolphins == winnerIsKoalas)&&(avgScoreDolphins>=100 && avgScoresKoalas>=100){
-    console.log(`It is a draw!!!`);
+else if(winnerIsKoalas){
+    console.log(`Koalas' team is the Super Winner!!`);
+    }
+else if(drawCheck){
+    console.log(`It is a draw!!`);
 }
 else{
     console.log(`No team wins the trophy`);
+} */
+
+// The switch statement
+/* const day = "saturday"
+
+switch(day){
+    case "monday":
+        console.log(`Plan course structure`);
+        console.log(`Go to coding meetup`);
+        break;
+    case "tuesday":
+        console.log(`Prepare theory videos`);
+        break;
+    case "wednesday":
+    case "thursday":
+        console.log(`Write code examples`);
+        break;
+    case "friday":
+        console.log(`Record videos`);
+        break;
+    case "saturday":
+    case "sunday":
+        console.log(`Enjoy the weekend :D`);
+        break;
+    default:
+        console.log(`Not a valid day!`);
+}
+ */
+
+// Doing the same using conditional statement
+
+const day = prompt(`What day is it?`)
+
+
+if(day==="Monday"){
+    console.log(`Plan course structure`);
+    console.log(`Go to coding meetup`);
+}
+else if(day==="Tuesday"){
+    console.log(`Prepare theory videos`);
+}
+else if(day==="Wednesday"||day==="Thursday"){
+    console.log(`Write code examples`);
+}
+else if(day==="Friday"){
+    console.log(`Record videos`);
+}
+else if(day==="Saturday"||day==="Sunday"){
+    console.log(`Enjoy the weekend :D`);
+}
+else{
+    console.log(`Not a valid day!`);
 }
