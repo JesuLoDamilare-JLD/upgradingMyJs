@@ -366,7 +366,7 @@ switch(day){
 
 // Doing the same using conditional statement
 
-const day = prompt(`What day is it?`)
+/* const day = prompt(`What day is it?`)
 
 
 if(day==="Monday"){
@@ -387,4 +387,38 @@ else if(day==="Saturday"||day==="Sunday"){
 }
 else{
     console.log(`Not a valid day!`);
+} */
+
+// Statements and Expression. Expression produce value like 3+4, 1991, true&&false. Statement does not produce value on itself. E.g; if else statement, switch
+
+// The conditional (ternary) operators
+/* const age =23;
+// age >=18 ? console.log(`I like to drink wine 🍷`):
+// console.log(`I like to drink water 💧`);
+
+const drink = age >=18 ? `wine 🍷` : `water 💧`;
+console.log(drink);
+
+let drink2
+if(age>=18){
+    drink2 = `wine 🍷`;
+} else {
+    drink2 = `water 💧`;
 }
+console.log(drink2); */
+
+// Coding Challenge 4
+/* const bill = Number(prompt(`What is the bill?`));
+const tip = bill>=50&&bill<=300? 0.15*bill:0.20*bill; */
+/* if(bill>=50&&bill<=300){
+console.log(`tip is ${0.15*bill}`);
+}
+else{
+    console.log(`tip is ${0.20*bill}`);
+} */
+// bill>=50&&bill<=300? console.log(0.15*bill):console.log(0.20*bill);
+/* console.log(`The bill value is ${bill}`);
+console.log(`The tip is ${tip}`);
+console.log(`The final value is ${tip+bill}`); */
+
+// JAVASCRIPT RELEASES: ES5, ES6+ AND ESNEXT
