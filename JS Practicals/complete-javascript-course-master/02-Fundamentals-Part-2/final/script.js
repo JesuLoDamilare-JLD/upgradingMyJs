@@ -135,6 +135,31 @@ HINT: To check if number A is at least double number B, check for A >= 2 * B. Ap
 GOOD LUCK 😀
 */
 
+
+
+const calcAverage = (score1, score2, score3) => {
+
+  return (score1 + score2 + score3)/3;
+}
+
+const dolphinsAvg = calcAverage(85, 54, 41);
+console.log(dolphinsAvg);
+
+const KoalasAvg = calcAverage(23, 34, 27);
+console.log(KoalasAvg);
+
+const checkWinner = (dolphinsAvg, KoalasAvg) =>{
+  if(dolphinsAvg >= 2 * KoalasAvg){
+    return (`Dolphin Wins!! ${dolphinsAvg} vs ${KoalasAvg}`);
+  }else if(KoalasAvg >= 2 * dolphinsAvg){
+    return (`Koalas Wins!! ${KoalasAvg} vs ${dolphinsAvg}`);
+  }else{
+    return (`There is no Winner!!`);
+  }
+}
+console.log(checkWinner(dolphinsAvg,KoalasAvg));
+
+
 /*
 const calcAverage = (a, b, c) => (a + b + c) / 3;
 console.log(calcAverage(3, 4, 5));
@@ -256,6 +281,45 @@ HINT: Remember that an array needs a value in each position, and that value can 
 
 GOOD LUCK 😀
 */
+
+
+// const calctip = bill => {
+//   if(bill >= 50 && bill <= 300 ){
+//     return bill * 0.15;
+//   }else{
+//     return bill * 0.20;
+//   }
+// }
+// console.log(calctip(555));
+
+// const bills = [125, 555, 44];
+// const tips = [calctip(bills[0]), calctip(bills[1]), calctip(bills[2])];
+// const total = [calctip(bills[0]) + bills[0], calctip(bills[1]) + bills[1], calctip(bills[2]) + bills[2]];
+// console.log(bills);
+// console.log(tips);
+// console.log(total);
+
+
+const finalGrade = (number1, number2, number3) => {
+  const avgFinalGrade = (number1 + number2 + number3)/3;
+  return `The average final grade is ${avgFinalGrade}`;
+
+  if((number1 < 0 || number1 > 100) || (number2 < 0 || number2 > 100) || (number3 < 0 || number3 > 100)){
+    return "You have entered an invalid grade.";
+  }
+  if(avgFinalGrade >= 0 && avgFinalGrade <= 59){
+    return "F";
+  }else if(avgFinalGrade >= 60 && avgFinalGrade <= 69){
+    return "D";
+  }else if(avgFinalGrade >= 70 && avgFinalGrade <= 79){
+    return "C";
+  }else if(avgFinalGrade >= 80 && avgFinalGrade <= 89){
+    return "B";
+  }else if(avgFinalGrade >= 90 && avgFinalGrade <= 100){
+    return "A";
+  }
+}
+
 
 /*
 const calcTip = function (bill) {

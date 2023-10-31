@@ -131,6 +131,28 @@ TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1
 GOOD LUCK 😀
 */
 
+// let massMark;
+// let heightMark;
+// let massJohn;
+// let heightJohn;
+// massMark = 78;
+// heightMark = 1.69;
+// massJohn = 92;
+// heightJohn = 1.95;
+
+// let bmiMark = massMark/heightMark ** 2;
+// let bmiJohn = massJohn/heightJohn ** 2;
+
+// console.log(`Mark's Body Mass Index BMI is ${bmiMark}`);
+// console.log(`John's Body Mass Index BMI is ${bmiJohn}`);
+
+// let bmiMarkHigher = (bmiMark > bmiJohn);
+// console.log(bmiMarkHigher);
+
+
+
+
+
 // const massMark = 78;
 // const heightMark = 1.69;
 // const massJohn = 92;
@@ -207,6 +229,33 @@ HINT: Use an if/else statement 😉
 
 GOOD LUCK 😀
 */
+
+// let massMark;
+// let heightMark;
+// let massJohn;
+// let heightJohn;
+// massMark = 78;
+// heightMark = 1.69;
+// massJohn = 92;
+// heightJohn = 1.95;
+
+// let bmiMark = massMark/heightMark ** 2;
+// let bmiJohn = massJohn/heightJohn ** 2;
+
+// console.log(`Mark's Body Mass Index BMI is ${bmiMark}`);
+// console.log(`John's Body Mass Index BMI is ${bmiJohn}`);
+
+// let bmiMarkHigher = (bmiMark > bmiJohn);
+// if(bmiMarkHigher){
+//   console.log(`Mark's weight is higher than John's!`);
+// }else{
+//   console.log(`John's weight is higher than Mark's!`);
+// }
+
+
+
+
+
 
 /*
 const massMark = 78;
@@ -342,6 +391,49 @@ TEST DATA BONUS 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 GOOD LUCK 😀
 */
 
+// const score1stDolphins = prompt(`Enter the Dolphins' first score value`);
+// const score2ndDolphins = prompt(`Enter the Dolphins' second score value`);
+// const score3rdDolphins = prompt(`Enter the Dolphins' third score value`);
+// const totalScoreDolphins = Number(score1stDolphins) + Number(score2ndDolphins) + Number(score3rdDolphins);
+// const avgTotalScoreDolphins = totalScoreDolphins/3;
+// const score1stKoalas = prompt(`Enter the Koalas' first score value`);
+// const score2ndKoalas = prompt(`Enter the Koalas' second score value`);
+// const score3rdKoalas = prompt(`Enter the Koalas' third score value`);
+// const totalScoreKoalas = Number(score1stKoalas) + Number(score2ndKoalas) + Number(score3rdKoalas);
+// const avgTotalScoreKoalas = totalScoreKoalas/3;
+
+// // Question 1 
+// console.log(totalScoreDolphins);
+// console.log(totalScoreKoalas);
+// console.log(`Dolphins average total score is ${avgTotalScoreDolphins}`);
+// console.log(`Koalas average total score is ${avgTotalScoreKoalas}`);
+
+// // Question 2
+// if(avgTotalScoreDolphins > avgTotalScoreKoalas){
+//   console.log(`YAH Dolphins is the WINNER!!`);
+// }else if(avgTotalScoreDolphins === avgTotalScoreKoalas){
+//   console.log(`Game Tie!! You should play again for a winner..`);
+// }
+// else{
+//   console.log(`Koalas win! HURAY!!`);
+// }
+
+// // Question 3
+// if(avgTotalScoreDolphins > avgTotalScoreKoalas && avgTotalScoreDolphins > 100){
+//   console.log(`Dolphin is indeed the true winner meeting the requirements`);
+// }else if(avgTotalScoreDolphins < avgTotalScoreKoalas && avgTotalScoreKoalas > 100){
+//   console.log(`Koalas is indeed the true winner meeting the requirements`)
+// }else{
+//   console.log(`Unfortunately, no team meets the true winner's complete requirement`);
+// }
+
+// // Question 4
+// if(avgTotalScoreDolphins === avgTotalScoreKoalas && avgTotalScoreDolphins >= 100 && avgTotalScoreKoalas >= 100){
+//   console.log(`It is a draw!!`);
+// }else{
+//   console.log(`no team wins the trophy`);
+// }
+
 /*
 // const scoreDolphins = (96 + 108 + 89) / 3;
 // const scoreKoalas = (88 + 91 + 110) / 3;
@@ -460,6 +552,12 @@ HINT: Value X is between 50 and 300, if it's >= 50 && <= 300 😉
 
 GOOD LUCK 😀
 */
+
+const bill = prompt(`Enter an amount`);
+const tip15 = 0.15 * bill;
+const tip20 = 0.20 * bill;
+bill >=50 && bill <=300? console.log(`The bill value is ${bill}, the tip is ${tip15} and the final value is ${Number(bill) + Number(tip15)}`) : console.log(`The bill value is ${bill}, the tip is ${tip20} and the final value is ${Number(bill) + Number(tip20)}`);
+
 
 /*
 const bill = 430;
