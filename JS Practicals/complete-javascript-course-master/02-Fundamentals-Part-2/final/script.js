@@ -137,27 +137,27 @@ GOOD LUCK 😀
 
 
 
-const calcAverage = (score1, score2, score3) => {
+// const calcAverage = (score1, score2, score3) => {
 
-  return (score1 + score2 + score3)/3;
-}
+//   return (score1 + score2 + score3)/3;
+// }
 
-const dolphinsAvg = calcAverage(85, 54, 41);
-console.log(dolphinsAvg);
+// const dolphinsAvg = calcAverage(85, 54, 41);
+// console.log(dolphinsAvg);
 
-const KoalasAvg = calcAverage(23, 34, 27);
-console.log(KoalasAvg);
+// const KoalasAvg = calcAverage(23, 34, 27);
+// console.log(KoalasAvg);
 
-const checkWinner = (dolphinsAvg, KoalasAvg) =>{
-  if(dolphinsAvg >= 2 * KoalasAvg){
-    return (`Dolphin Wins!! ${dolphinsAvg} vs ${KoalasAvg}`);
-  }else if(KoalasAvg >= 2 * dolphinsAvg){
-    return (`Koalas Wins!! ${KoalasAvg} vs ${dolphinsAvg}`);
-  }else{
-    return (`There is no Winner!!`);
-  }
-}
-console.log(checkWinner(dolphinsAvg,KoalasAvg));
+// const checkWinner = (dolphinsAvg, KoalasAvg) =>{
+//   if(dolphinsAvg >= 2 * KoalasAvg){
+//     return (`Dolphin Wins!! ${dolphinsAvg} vs ${KoalasAvg}`);
+//   }else if(KoalasAvg >= 2 * dolphinsAvg){
+//     return (`Koalas Wins!! ${KoalasAvg} vs ${dolphinsAvg}`);
+//   }else{
+//     return (`There is no Winner!!`);
+//   }
+// }
+// console.log(checkWinner(dolphinsAvg,KoalasAvg));
 
 
 /*
@@ -300,25 +300,27 @@ GOOD LUCK 😀
 // console.log(total);
 
 
-const finalGrade = (number1, number2, number3) => {
-  const avgFinalGrade = (number1 + number2 + number3)/3;
-  return `The average final grade is ${avgFinalGrade}`;
+// const finalGrade = (number1, number2, number3) => {
+//   const avgFinalGrade = (number1 + number2 + number3)/3;
+//   return `The average final grade is ${avgFinalGrade}`;
 
-  if((number1 < 0 || number1 > 100) || (number2 < 0 || number2 > 100) || (number3 < 0 || number3 > 100)){
-    return "You have entered an invalid grade.";
-  }
-  if(avgFinalGrade >= 0 && avgFinalGrade <= 59){
-    return "F";
-  }else if(avgFinalGrade >= 60 && avgFinalGrade <= 69){
-    return "D";
-  }else if(avgFinalGrade >= 70 && avgFinalGrade <= 79){
-    return "C";
-  }else if(avgFinalGrade >= 80 && avgFinalGrade <= 89){
-    return "B";
-  }else if(avgFinalGrade >= 90 && avgFinalGrade <= 100){
-    return "A";
-  }
-}
+//   if((number1 < 0 || number1 > 100) || (number2 < 0 || number2 > 100) || (number3 < 0 || number3 > 100)){
+//     return "You have entered an invalid grade.";
+//   }
+//   if(avgFinalGrade >= 0 && avgFinalGrade <= 59){
+//     return "F";
+//   }else if(avgFinalGrade >= 60 && avgFinalGrade <= 69){
+//     return "D";
+//   }else if(avgFinalGrade >= 70 && avgFinalGrade <= 79){
+//     return "C";
+//   }else if(avgFinalGrade >= 80 && avgFinalGrade <= 89){
+//     return "B";
+//   }else if(avgFinalGrade >= 90 && avgFinalGrade <= 100){
+//     return "A";
+//   }
+// }
+
+window.confirm("Hello World");
 
 
 /*
