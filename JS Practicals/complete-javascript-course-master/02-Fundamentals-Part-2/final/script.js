@@ -298,7 +298,7 @@ GOOD LUCK 😀
 // console.log(bills);
 // console.log(tips);
 // console.log(total);
-
+// end
 
 // const finalGrade = (number1, number2, number3) => {
 //   const avgFinalGrade = (number1 + number2 + number3)/3;
@@ -320,7 +320,7 @@ GOOD LUCK 😀
 //   }
 // }
 
-window.confirm("Hello World");
+// window.confirm("Hello World");
 
 
 /*
@@ -447,6 +447,7 @@ TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 
 GOOD LUCK 😀
 */
+// My solution is down below
 
 /*
 const mark = {
@@ -653,3 +654,36 @@ console.log(calcAverage([2, 3, 7]));
 console.log(calcAverage(totals));
 console.log(calcAverage(tips));
 */
+
+// My solution to challenge 3
+/* Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter)
+
+1. For each of them, create an object with properties for their full name, mass, and height (Mark Miller and John Smith)
+2. Create a 'calcBMI' method on each object to calculate the BMI (the same method on both objects). Store the BMI value to a property, and also return it from the method.
+3. Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!"
+
+TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall. */
+let markData = {
+  fullName: "Mark Miller",
+  mass: 78,
+  height: 1.69,
+  markCalcBmi(){
+    this.bmi = this.mass / this.height**2;
+    return this.bmi;
+  }
+};
+
+let johnData = {
+  fullName: "John Smith",
+  mass: 92,
+  height: 1.92,
+  johnCalcBmi(){
+    this.bmi = this.mass / this.height**2;
+    return this.bmi;
+  }
+};
+
+markData.markCalcBmi();
+johnData.johnCalcBmi();
+console.log(markData.bmi);
+console.log(markData.bmi > johnData.bmi? `Mark has the higher score of ${markData.bmi}` : `John has the higher score of ${johnData.bmi}`)
