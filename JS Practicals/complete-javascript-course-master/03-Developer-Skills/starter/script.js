@@ -61,16 +61,16 @@ Create a function 'printForecast' which takes in an array 'arr' and logs a strin
 
 Use the problem-solving framework: Understand the problem and break it up into sub-problems!
 
-TEST DATA 1: [17, 21, 23]
-TEST DATA 2: [12, 5, -5, 0, 4] */
+TEST DATA 1: [22, 19, 18, 15, 8]
+TEST DATA 2: [-4, -1, 3, 10, -2] */
 
 /* 
 store array has variable
 iterate over each array and add days in sequential to it
 
 */
-const array1 = [17, 21, 23];
-const array2 = [12, 5, -5, 0, 4];
+const testData1 = [22, 19, 18, 15, 8];
+const testData2 = [-4, -1, 3, 10, -2];
 
 const printForecast = (arr) => {
   let forecasted = "";
@@ -79,4 +79,5 @@ const printForecast = (arr) => {
   }
   return forecasted + ` ...`;
 };
-console.log(printForecast([17, 21, 23]));
+console.log(printForecast(testData1));
+console.log(printForecast(testData2));
